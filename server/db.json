@@ -1,0 +1,74 @@
+{
+  "examiners": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "nationalProviderIdentifier": "1234567890"
+    },
+    {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "nationalProviderIdentifier": "0987654321"
+    },
+    {
+      "id": 3,
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "nationalProviderIdentifier": "1122334455"
+    },
+    {
+      "id": 4,
+      "firstName": "Bob",
+      "lastName": "Brown",
+      "nationalProviderIdentifier": "2233445566"
+    }
+  ],
+  "mentalStateExams": [
+    {
+      "id": 1,
+      "patientId": 101,
+      "examinerId": 1,
+      "examDate": "2024-09-30",
+      "orientationScore": 10,
+      "registrationScore": 8,
+      "attentionAndCalculationScore": 9,
+      "recallScore": 7,
+      "languageScore": 9
+    },
+    {
+      "id": 2,
+      "patientId": 102,
+      "examinerId": 2,
+      "examDate": "2024-09-29",
+      "orientationScore": 9,
+      "registrationScore": 7,
+      "attentionAndCalculationScore": 8,
+      "recallScore": 6,
+      "languageScore": 8
+    },
+    {
+      "id": 3,
+      "patientId": 103,
+      "examinerId": 1,
+      "examDate": "2024-09-28",
+      "orientationScore": 8,
+      "registrationScore": 9,
+      "attentionAndCalculationScore": 8,
+      "recallScore": 7,
+      "languageScore": 8
+    },
+    {
+      "id": 4,
+      "patientId": 104,
+      "examinerId": 3,
+      "examDate": "2024-09-27",
+      "orientationScore": 10,
+      "registrationScore": 9,
+      "attentionAndCalculationScore": 9,
+      "recallScore": 9,
+      "languageScore": 10
+    }
+  ]
+}
