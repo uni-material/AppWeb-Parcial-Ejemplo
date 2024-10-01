@@ -9,7 +9,7 @@ export default {
         { label: 'Home', to: '/home' },
         /*{ label: 'Examiners', to: '/examiners' },
         { label: 'MentalStateExams', to: '/mentalStateExams' },*/
-        { label: 'Overview', to: '/overview'}
+        { label: 'Examiner Performance Overview', to: '/overview'}
       ]
     };
   },
@@ -28,7 +28,7 @@ export default {
       <!-- Logo a la izquierda -->
       <template #start>
         <img src="/src/assets/HIGN-logo-1200.png" alt="Logo" style="height: 40px; margin-right: 10px;" />
-        <h3>Hartford</h3>
+        <h3>Hartford Institute for Geriatric Nursing</h3>
       </template>
 
       <!-- Opciones del menú a la derecha -->

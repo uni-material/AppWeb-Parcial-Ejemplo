@@ -6,8 +6,8 @@ export default {
 </script>
 
 <template>
-  <div class="w-full align-content-center">
+  <div class="component-text">
     <h1>Home</h1>
-    <p>BOMDIAAAAA</p>
+    <p class="component-text">Welcome to HIGN</p>
   </div>
 </template>
