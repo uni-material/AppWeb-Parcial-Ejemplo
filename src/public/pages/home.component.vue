@@ -50,9 +50,11 @@ export default {
 
 <template>
   <div class="home" aria-label="Mental State Exam Analytics">
-    <h1>Mental State Exam Analytics</h1>
-    <h2>Score Analytics</h2>
+    <h1>Home</h1>
+    <h2>Welcome</h2>
     <div class="card" role="region" aria-labelledby="analytics-card">
+      <h1>Mental State Exam Analytics</h1>
+      <h2>Score Analytics</h2>
       <h3 id="analytics-card" class="visually-hidden">Analytics Indicators</h3>
       <div class="indicator" v-for="(value, key) in indicators" :key="key">
         <span>{{ key }}:</span>
@@ -65,11 +67,23 @@ export default {
 <style scoped>
 .card {
   border: 1px solid #ccc;
-  padding: 16px;
+  padding: 20px;
   border-radius: 8px;
   margin-top: 20px;
+  text-align: center;
+  width: 400px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .indicator {
   margin-bottom: 8px;
 }
+
+.home{
+  text-align: center;
+}
+
+
 </style>
