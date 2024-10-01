@@ -1,30 +1,45 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+export default {
+  name: 'app',
+  title: 'hartford',
+  data() {
+    return {
+      drawer: false,
+      items: [
+        { label: 'Home', to: '/home' },
+        /*{ label: 'Examiners', to: '/examiners' },
+        { label: 'MentalStateExams', to: '/mentalStateExams' },*/
+        { label: 'Overview', to: '/overview'}
+      ]
+    };
+  },
+  methods: {
+    toggleDrawer() {
+      this.drawer = !this.drawer;
+    }
+  }
+}
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+  <pv-toast></pv-toast>
+  <header>
+    <pv-toolbar class="bg-primary" fixed>
+      <!-- Logo a la izquierda -->
+      <template #start>
+        <img src="/src/assets/HIGN-logo-1200.png" alt="Logo" style="height: 40px; margin-right: 10px;" />
+        <h3>Hartford</h3>
+      </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+      <!-- Opciones del menú a la derecha -->
+      <template #end>
+        <div class="flex-row">
+          <router-link v-for="item in items" :key="item.label" :to="item.to">
+            <pv-button class="p-button-text text-white">{{ item.label }}</pv-button>
+          </router-link>
+        </div>
+      </template>
+    </pv-toolbar>
+  </header>
+  <router-view/>
+</template>
